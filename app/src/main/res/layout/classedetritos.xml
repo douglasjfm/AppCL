@@ -1,0 +1,280 @@
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ControleMenu" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/capturada"
+                android:layout_width="125dp"
+                android:layout_height="95dp"
+                android:src="@mipmap/gpsimg" />
+
+            <Button
+                android:id="@+id/denunciarbtnclasse"
+                style="@style/FullscreenTheme"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="submeterDenuncia"
+                android:text="Enviar"
+                android:textColor="#FFFFFF" >
+            </Button>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.09" >
+
+            <LinearLayout
+                android:id="@+id/gpsssssssssaas2"
+                style="?metaButtonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@color/black_overlay"
+                android:orientation="vertical"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Volume do Entulho"
+                    android:textColor="#04b511" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/volume1"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#000000"
+                                android:onClick="escolheVolume"
+                                android:src="@mipmap/carrodemao" />
+
+                            <ImageView
+                                android:id="@+id/volume2"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#000000"
+                                android:onClick="escolheVolume"
+                                android:src="@mipmap/cacamba" />
+
+                            <ImageView
+                                android:id="@+id/volume3"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#000000"
+                                android:onClick="escolheVolume"
+                                android:src="@mipmap/cacambas" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Tipo de Entulho"
+                    android:textColor="#04B511" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/classe1"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#000000"
+                                android:onClick="escolheClasse"
+                                android:src="@mipmap/concreto"
+                                android:tag="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Concreto"
+                                android:textColor="#04B511" />
+                        </LinearLayout>
+
+                        <LinearLayout android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/classe2"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#000000"
+                                android:onClick="escolheClasse"
+                                android:src="@mipmap/ferro"
+                                android:tag="2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Ferro"
+                                android:textColor="#04B511" />
+                        </LinearLayout>
+
+                        <LinearLayout android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/classe3"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#000000"
+                                android:onClick="escolheClasse"
+                                android:src="@mipmap/tijolos"
+                                android:tag="3" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Tijolos"
+                                android:textColor="#04B511" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/classe4"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#000000"
+                                android:onClick="escolheClasse"
+                                android:src="@mipmap/madeira"
+                                android:tag="4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Madeira"
+                                android:textColor="#04B511" />
+                        </LinearLayout>
+
+                        <LinearLayout android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/classe5"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#000000"
+                                android:onClick="escolheClasse"
+                                android:src="@mipmap/gesso"
+                                android:tag="5" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Gesso"
+                                android:textColor="#04B511" />
+                        </LinearLayout>
+
+                        <LinearLayout android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/classe6"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#000000"
+                                android:onClick="escolheClasse"
+                                android:src="@mipmap/misto"
+                                android:tag="6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Misto"
+                                android:textColor="#04B511" />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD" >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:theme="@+theme/AppTheme"
+                android:onClick="anonimidade"
+                android:text="Denunciar anonimamente"
+                android:textColor="#04B511" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/menuimgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#333333"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <LinearLayout
+                android:id="@+id/menurecentes"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="#333333"
+                android:onClick="recentes"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imagem1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/recentes"
+                    android:contentDescription="Registros" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Atividades recentes"
+                    android:textColor="#04b511"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuocorrencias"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="#333333"
+                android:gravity="top"
+                android:onClick="proximas"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ocorrencias" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ocorrências próximas"
+                    android:textColor="#04b511"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menurelatar"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="#333333"
+                android:gravity="top"
+                android:onClick="relatar"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/relatar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Relatar"
+                        android:textColor="#04b511"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menumapa"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="#333333"
+                android:onClick="mapaResiduos"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/globe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Mapa dos Resíduos"
+                    android:textColor="#04b511"
+                    android:textSize="10sp"
+                    android:width="60dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuperfil"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="#333333"
+                android:onClick="perfil"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Perfil"
+                    android:textColor="#04b511"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/infoGPS"
+                    android:layout_width="146dp"
+                    android:layout_height="146dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="GPS Estado"
+                    android:onClick="cbInfoGPS"
+                    android:src="@mipmap/imggps2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
