@@ -24,7 +24,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -32,7 +33,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.graphics.Point;
 
-public class ControleMenuMapa extends FragmentActivity implements OnMapReadyCallback {
+public class ControleMenuMapa extends AppCompatActivity implements OnMapReadyCallback {
 	
 	public MapFragment mapa;
 	public GoogleMap gMapa;
@@ -88,7 +89,12 @@ public class ControleMenuMapa extends FragmentActivity implements OnMapReadyCall
 	@Override
 	public void onCreate(Bundle b) {
 		super.onCreate(b);
-		
+
+		ActionBar barra = getSupportActionBar();
+		barra.setDisplayShowHomeEnabled(true);
+		barra.setIcon(R.mipmap.ic_launcher48);
+		barra.setTitle("Cidade Limpa - Mapa");
+
 		SharedPreferences prefs = this.getSharedPreferences(
 	        getString(R.string.cl_key_shared_prefs), Context.MODE_PRIVATE);
 		userID = prefs.getString("gmailUserID", "adm");
