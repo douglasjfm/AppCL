@@ -81,7 +81,7 @@ public class ControleMenu extends AppCompatActivity{
 		SharedPreferences lpref = this.getSharedPreferences(getString(R.string.cl_key_shared_prefs), Context.MODE_PRIVATE);
         SharedPreferences.Editor edt;
 		try {
-			URL url = new URL("http://www.cin.ufpe.br/~djfm/endereco.txt");
+			URL url = new URL("http://noronhashouse.com/cl/endereco.txt");
 			HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 			InputStream in = new BufferedInputStream(urlConnection.getInputStream());
 			BufferedReader br = new BufferedReader(new InputStreamReader(in));
