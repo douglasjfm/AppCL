@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="ion-2.1.9">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/ad3000b3dc8d32320a1bc0c0616f947bc20e0ad8/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/ad3000b3dc8d32320a1bc0c0616f947bc20e0ad8/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.koushikdutta.ion/ion/2.1.9/99971704da27eb3d07ae8d92291bd17226ca262e/ion-2.1.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
